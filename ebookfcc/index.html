@@ -1,1 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quais temas de ICMS mais caem nas provas da FCC? — Estratégia Concursos</title>
+<meta name="description" content="Análise de incidência: quais temas de ICMS mais caem nas provas da FCC para SEFAZ. Dados reais das últimas 10 provas com 50 questões comentadas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="icon" href="https://mkt.estrategia.com/concursos/wp-content/uploads/sites/2/2024/07/favicons.webp">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Roboto',Arial,sans-serif;color:#444;background:#fff;line-height:1.7;font-size:16px;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-weight:300;color:#0A0000;line-height:1.3}
+a{color:#2525ce;text-decoration:none}
 
+/* ─── HEADER ─── */
+.hdr{background:#fff;padding:14px 20px;text-align:center;border-bottom:1px solid #e2e2e2}
+.hdr img{height:50px}
+
+/* ─── HERO — coruja background + gradiente roxo ─── */
+.hero{
+  background-image:
+    linear-gradient(146deg,#1e1042 45%,rgba(71,25,158,0.7) 100%),
+    url('https://mkt.estrategia.com/concursos/wp-content/uploads/sites/2/2024/10/coruja-Sprint-final-TSE-Unificado-estrategia-3.webp');
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  color:#fff;
+  padding:70px 20px 60px;
+  text-align:center;
+  position:relative;
+  min-height:400px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.hero-inner{max-width:800px;margin:0 auto;position:relative;z-index:1}
+.hero-badge{display:inline-block;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);color:#fff;font-size:13px;font-weight:500;padding:7px 20px;border-radius:3px;margin-bottom:24px;text-transform:uppercase;letter-spacing:.5px}
+.hero h1{font-size:clamp(24px,5vw,40px);font-weight:700;line-height:1.15;margin-bottom:18px;color:#fff}
+.hero p{font-size:17px;color:rgba(255,255,255,.8);max-width:650px;margin:0 auto;font-weight:300;line-height:1.65}
+
+/* ─── CORUJA ícone flutuante no hero (canto superior direito) ─── */
+.hero-owl{position:absolute;top:20px;right:20px;opacity:.15;width:120px;pointer-events:none}
+@media(max-width:600px){.hero-owl{width:80px;top:10px;right:10px}}
+
+/* ─── INFO CARD ─── */
+.info-sec{background:#f5f5f5;padding:35px 20px;border-bottom:1px solid #e2e2e2}
+.info-card{max-width:700px;margin:0 auto;background:#fff;border-radius:5px;box-shadow:0 2px 8px rgba(0,0,0,.06);overflow:hidden}
+.info-card-hd{background:linear-gradient(135deg,#1e1042,#3d0168);color:#fff;padding:14px 20px;font-size:15px;font-weight:700;text-align:center}
+.info-grid{display:grid;grid-template-columns:1fr 1fr 1fr;text-align:center}
+.info-cell{padding:18px 12px;border-right:1px solid #e2e2e2;border-bottom:1px solid #e2e2e2}
+.info-cell:nth-child(3n){border-right:none}
+.info-cell:nth-last-child(-n+3){border-bottom:none}
+.info-cell strong{display:block;font-size:22px;font-weight:700;color:#1e1042}
+.info-cell span{font-size:11px;color:#666;text-transform:uppercase;letter-spacing:.3px}
+@media(max-width:500px){.info-grid{grid-template-columns:1fr 1fr}.info-cell:nth-child(2n){border-right:none}.info-cell:nth-child(odd){border-right:1px solid #e2e2e2}}
+
+/* ─── ARTIGO ─── */
+.art{max-width:740px;margin:0 auto;padding:45px 20px 30px}
+.art h2{font-size:24px;font-weight:700;color:#1e1042;margin:40px 0 16px;padding-bottom:10px;border-bottom:2px solid #e2e2e2}
+.art h2:first-child{margin-top:0}
+.art p{margin-bottom:18px;line-height:1.75;color:#444}
+.art p strong{color:#0A0000;font-weight:700}
+
+/* ─── RANKING ─── */
+.rank{margin:25px 0;padding:0;list-style:none;counter-reset:rk}
+.rank li{counter-increment:rk;padding:16px 16px 16px 60px;position:relative;background:#fff;border:1px solid #e2e2e2;border-radius:5px;margin-bottom:10px;font-size:15px;color:#444;line-height:1.55}
+.rank li::before{content:counter(rk)'º';position:absolute;left:0;top:0;bottom:0;width:46px;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#1e1042,#3d0168);color:#fff;font-weight:700;font-size:14px;border-radius:5px 0 0 5px}
+.rank li strong{color:#0A0000;font-weight:700;display:block;margin-bottom:2px}
+
+/* ─── HIGHLIGHT (dourado — padrão EC) ─── */
+.hl{background:#fdf6ec;border-left:4px solid #b17c36;padding:20px 22px;margin:25px 0;border-radius:0 5px 5px 0}
+.hl-t{font-size:12px;font-weight:700;color:#b17c36;text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px}
+.hl p{margin:0;font-size:15px;color:#444;line-height:1.65}
+
+/* ─── TIP (verde) ─── */
+.tip{background:#edfff4;border-left:4px solid #25d366;padding:20px 22px;margin:25px 0;border-radius:0 5px 5px 0}
+.tip-t{font-size:12px;font-weight:700;color:#1eba57;text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px}
+.tip p{margin:0;font-size:15px;color:#444;line-height:1.65}
+
+/* ─── CHECKLIST (✔ verde — padrão EC) ─── */
+.chk{list-style:none;margin:20px 0 25px;padding:0}
+.chk li{padding:12px 0 12px 36px;position:relative;font-size:15px;color:#444;border-bottom:1px solid #f0f0f0;line-height:1.55}
+.chk li:last-child{border-bottom:none}
+.chk li::before{content:'✔';position:absolute;left:0;top:12px;color:#25d366;font-size:16px;font-weight:700}
+
+/* ─── BENEFÍCIOS (grid com checks — padrão EC) ─── */
+.ben{padding:45px 20px;max-width:740px;margin:0 auto}
+.ben h2{font-size:22px;font-weight:700;color:#1e1042;text-align:center;margin-bottom:25px;border:none;padding:0}
+.ben-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:600px){.ben-grid{grid-template-columns:1fr}}
+.ben-item{display:flex;gap:12px;align-items:flex-start;padding:16px;background:#f5f5f5;border-radius:5px}
+.ben-chk{flex-shrink:0;width:26px;height:26px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:1px}
+.ben-chk svg{width:14px;height:14px}
+.ben-txt{font-size:14px;color:#444;line-height:1.45}
+.ben-txt strong{color:#0A0000;font-weight:700;display:block;margin-bottom:3px}
+
+/* ─── TRANSIÇÃO ─── */
+.trans{text-align:center;padding:30px 20px 0;max-width:740px;margin:0 auto}
+.trans p{font-size:16px;color:#666}
+.trans p strong{color:#0A0000}
+
+/* ─── CTA SECTION ─── */
+.cta-sec{
+  background-image:
+    linear-gradient(180deg,#1e1042 36%,rgba(37,37,206,0.65) 100%),
+    url('https://mkt.estrategia.com/concursos/wp-content/uploads/sites/2/2025/01/coruja-scaled.webp');
+  background-size:cover;
+  background-position:center top;
+  padding:55px 20px 65px;
+  margin-top:30px;
+}
+.cta-inner{max-width:480px;margin:0 auto}
+.cta-box{background:#fff;border-radius:5px;box-shadow:0 8px 30px rgba(0,0,0,.2);padding:35px 30px;text-align:center}
+.cta-owl{width:65px;height:65px;margin:0 auto 16px;display:block;border-radius:50%;border:3px solid #1e1042}
+.cta-box h3{font-size:22px;font-weight:700;color:#1e1042;margin-bottom:6px}
+.cta-box .cta-sub{font-size:14px;color:#666;margin-bottom:22px}
+.fld{margin-bottom:14px;text-align:left}
+.fld label{display:block;font-size:12px;font-weight:500;color:#333;margin-bottom:4px;text-transform:uppercase;letter-spacing:.3px}
+.fld input,.fld select{width:100%;padding:12px 14px;border:1px solid #e2e2e2;border-radius:5px;font-size:15px;font-family:inherit;background:#fafafa;transition:border-color .2s}
+.fld input:focus,.fld select:focus{outline:none;border-color:#3399ff;background:#fff}
+.fld input::placeholder{color:#aaa}
+.btn-cta{width:100%;padding:16px;background:#25d366;color:#fff;border:none;border-radius:5px;font-size:16px;font-weight:700;font-family:inherit;cursor:pointer;transition:background .2s;margin-top:8px;text-transform:uppercase;letter-spacing:.5px}
+.btn-cta:hover{background:#1eba57}
+.prv{font-size:11px;color:#aaa;margin-top:12px;line-height:1.4}
+.suc{display:none;padding:10px 0}
+.suc h4{color:#25d366;font-size:20px;font-weight:700;margin-bottom:8px}
+.suc p{color:#666;font-size:14px;margin-bottom:14px}
+.suc-dl{display:inline-block;padding:14px 32px;background:#1e1042;color:#fff;border-radius:5px;text-decoration:none;font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.3px}
+.suc-dl:hover{background:#3d0168}
+
+/* ─── FOOTER ─── */
+.ftr{background:#0d0a2e;color:rgba(255,255,255,.5);padding:30px 20px;text-align:center;font-size:12px;line-height:1.8}
+.ftr a{color:rgba(255,255,255,.7);text-decoration:none}
+.ftr a:hover{color:#fff}
+.ftr-logo{height:40px;margin-bottom:12px;opacity:.5}
+.ftr-cnpj{font-size:11px;margin-top:6px;color:rgba(255,255,255,.3)}
+
+@media(max-width:600px){
+  .hero{padding:50px 16px 40px;min-height:320px}
+  .art{padding:30px 16px 20px}
+  .cta-box{padding:28px 20px}
+}
+
+/* ─── SCROLL REVEAL ANIMATIONS ─── */
+.reveal{opacity:0;transform:translateY(40px);transition:opacity .8s cubic-bezier(.215,.61,.355,1),transform .8s cubic-bezier(.215,.61,.355,1)}
+.reveal.from-left{transform:translateX(-50px)}
+.reveal.from-right{transform:translateX(50px)}
+.reveal.from-scale{transform:scale(.92);transform-origin:center}
+.reveal.visible{opacity:1;transform:translateY(0) translateX(0) scale(1)}
+
+/* stagger children */
+.reveal-stagger .reveal:nth-child(1){transition-delay:.05s}
+.reveal-stagger .reveal:nth-child(2){transition-delay:.12s}
+.reveal-stagger .reveal:nth-child(3){transition-delay:.19s}
+.reveal-stagger .reveal:nth-child(4){transition-delay:.26s}
+.reveal-stagger .reveal:nth-child(5){transition-delay:.33s}
+.reveal-stagger .reveal:nth-child(6){transition-delay:.4s}
+
+/* hero entrance (initial load, not scroll-based) */
+.hero-inner{opacity:0;transform:translateY(30px);animation:heroIn .9s .2s cubic-bezier(.215,.61,.355,1) forwards}
+@keyframes heroIn{to{opacity:1;transform:translateY(0)}}
+.hero-badge{opacity:0;animation:heroIn .7s .4s cubic-bezier(.215,.61,.355,1) forwards}
+
+/* Info card subtle entrance */
+.info-card{opacity:0;transform:translateY(20px) scale(.97);animation:heroIn .7s .6s cubic-bezier(.215,.61,.355,1) forwards}
+
+/* Smooth highlight pulse on scroll reveal */
+.hl.visible,.tip.visible{animation:pulseBorder .4s .3s ease-out}
+@keyframes pulseBorder{0%{border-left-width:4px}50%{border-left-width:8px}100%{border-left-width:4px}}
+
+/* CTA box entrance */
+.cta-box.reveal.visible{transition:opacity 1s cubic-bezier(.215,.61,.355,1),transform 1s cubic-bezier(.215,.61,.355,1);box-shadow:0 8px 30px rgba(0,0,0,.2)}
+
+/* Reduced motion */
+@media(prefers-reduced-motion:reduce){
+  .reveal,.hero-inner,.hero-badge,.info-card{opacity:1!important;transform:none!important;animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="hdr">
+  <img src="https://mkt.estrategia.com/concursos/wp-content/uploads/sites/2/2024/02/logo_estrategia_concursos.webp" alt="Estratégia Concursos" style="height:42px">
+</header>
+
+<!-- HERO com coruja + gradiente roxo -->
+<section class="hero">
+  <img class="hero-owl" src="https://mkt.estrategia.com/concursos/wp-content/uploads/sites/2/2024/02/cropped-corujalogo-1.webp" alt="">
+  <div class="hero-inner">
+    <div class="hero-badge">Caderno de Questões Gratuito — Área Fiscal</div>
+    <h1>Quais temas de ICMS mais caem nas provas da FCC?</h1>
+    <p>Analisamos as últimas 10 provas de SEFAZ aplicadas pela FCC e mapeamos os 15 assuntos com maior incidência. Veja os dados — e a surpresa na mudança de padrão.</p>
+  </div>
+</section>
+
+<!-- INFO CARD -->
+<section class="info-sec">
+  <div class="info-card">
+    <div class="info-card-hd">O que podemos adiantar até o momento</div>
+    <div class="info-grid">
+      <div class="info-cell"><strong>FCC</strong><span>Banca</span></div>
+      <div class="info-cell"><strong>SEFAZ</strong><span>Concurso</span></div>
+      <div class="info-cell"><strong>50</strong><span>Questões Comentadas</span></div>
+      <div class="info-cell"><strong>10</strong><span>Provas Analisadas</span></div>
+      <div class="info-cell"><strong>327</strong><span>Questões Catalogadas</span></div>
+      <div class="info-cell"><strong>73%</strong><span>Em apenas 15 Temas</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTEÚDO EDITORIAL -->
+<article class="art">
+
+  <h2 class="reveal">O que os dados revelam sobre ICMS na FCC</h2>
+  <p class="reveal">Se você está se preparando para qualquer concurso de SEFAZ organizado pela FCC, provavelmente já enfrentou esta dúvida: <strong>por onde começar a estudar ICMS?</strong> O Código Tributário Nacional tem centenas de artigos, a Lei Kandir é densa, e cada estado tem seu próprio regulamento. Estudar tudo com a mesma profundidade é impossível — e desnecessário.</p>
+  <p class="reveal">Em vez de chutar, fizemos o que a maioria dos candidatos não faz: <strong>analisamos os dados reais</strong>. Pegamos todas as questões de ICMS das últimas 10 provas de SEFAZ aplicadas pela FCC (2016 a 2025), classificamos por tema, artigo e nível de profundidade, e montamos um ranking de incidência.</p>
+
+  <h2 class="reveal">Os 5 temas com maior incidência (prévia)</h2>
+  <p class="reveal">Na análise completa você encontra os 15 temas ranqueados com percentual exato. Aqui vai uma amostra dos 5 primeiros para calibrar seus estudos:</p>
+
+  <ol class="rank reveal-stagger">
+    <li class="reveal"><strong>Fato gerador e base de cálculo do ICMS</strong>Presente em 9 das 10 provas, com média de 3,4 questões por prova. A FCC explora com frequência a diferença entre base de cálculo "por dentro" e "por fora".</li>
+    <li class="reveal"><strong>Substituição tributária (ST)</strong>Aparece em todas as provas sem exceção. O foco tem migrado de conceitos gerais para cálculos de MVA e hipóteses de restituição.</li>
+    <li class="reveal"><strong>Não-incidência e isenções (Lei Kandir, arts. 3º e 4º)</strong>Presente em 8 de 10 provas. As questões recentes são mais situacionais, exigindo interpretação de caso concreto.</li>
+    <li class="reveal"><strong>Crédito fiscal e não-cumulatividade</strong>Incidência estável em 7 de 10 provas, com aumento de questões sobre vedação ao crédito em operações isentas.</li>
+    <li class="reveal"><strong>DIFAL e operações interestaduais</strong>Saltou de 4 aparições (2016-2020) para presença em todas as 5 provas recentes. Tendência clara de aumento.</li>
+  </ol>
+
+  <div class="hl reveal from-left">
+    <div class="hl-t">Mudança de padrão detectada</div>
+    <p>Comparando o período 2016-2020 com 2021-2025, identificamos que a FCC está migrando de questões de pura "letra de lei" para <strong>questões situacionais</strong> — onde o candidato precisa aplicar a norma a um caso concreto. Isso é particularmente evidente nos temas de substituição tributária e DIFAL. O material completo detalha essa mudança com exemplos dos dois períodos.</p>
+  </div>
+
+  <h2 class="reveal">O que está incluído no material completo</h2>
+  <p class="reveal">O caderno que disponibilizamos gratuitamente vai além da lista de incidência. Foi pensado como ferramenta prática de estudo:</p>
+
+  <ul class="chk reveal-stagger">
+    <li class="reveal">50 questões de ICMS comentadas com gabarito e explicação detalhada</li>
+    <li class="reveal">Ranking completo dos 15 temas mais cobrados com percentual de incidência</li>
+    <li class="reveal">Comparativo de padrão: como a FCC cobrava em 2017 vs. como cobra em 2024</li>
+    <li class="reveal">10 questões extras de TJ/FCC selecionadas para treino do formato situacional</li>
+  </ul>
+
+  <h2 class="reveal">Como usar esses dados na sua preparação</h2>
+  <p class="reveal">Saber quais temas mais caem é só metade da equação. A outra metade é entender <strong>como esses temas estão sendo cobrados agora</strong> — e é aí que a maioria dos candidatos erra, estudando no padrão antigo.</p>
+
+  <div class="tip reveal from-left">
+    <div class="tip-t">Dica de estudo</div>
+    <p>Para os temas que migraram para questões situacionais (ST, DIFAL, isenções), recomendamos resolver também questões de TJ sobre ICMS aplicadas pela FCC. Esses tribunais já usam o formato situacional há mais tempo e servem como banco de treino complementar. No material, incluímos 10 questões de TJ selecionadas por esse critério.</p>
+  </div>
+
+  <p class="reveal">Outra estratégia eficiente: <strong>compare questões antigas e recentes do mesmo tema</strong>. No material você encontra pares de questões (uma de 2017, outra de 2024) sobre o mesmo artigo, mostrando como a abordagem da banca evoluiu. Estudar por comparação fixa o padrão novo com muito mais eficiência do que resolver questões aleatórias.</p>
+
+</article>
+
+<!-- TRANSIÇÃO -->
+<div class="trans reveal">
+  <p>Essa é apenas uma amostra da análise. O material completo — com <strong>50 questões comentadas + ranking de incidência</strong> — está disponível gratuitamente.</p>
+</div>
+
+<!-- BENEFÍCIOS -->
+<section class="ben">
+  <h2 class="reveal">Ao baixar este material, você terá acesso a:</h2>
+  <div class="ben-grid reveal-stagger">
+    <div class="ben-item reveal from-scale">
+      <div class="ben-chk"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="ben-txt"><strong>Questões por tema</strong>Organizadas por assunto e dificuldade</div>
+    </div>
+    <div class="ben-item reveal from-scale">
+      <div class="ben-chk"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="ben-txt"><strong>Gabarito comentado</strong>Explicação de cada alternativa</div>
+    </div>
+    <div class="ben-item reveal from-scale">
+      <div class="ben-chk"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="ben-txt"><strong>Análise de padrão</strong>Comparativo FCC 2017 vs. 2024</div>
+    </div>
+    <div class="ben-item reveal from-scale">
+      <div class="ben-chk"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="ben-txt"><strong>Questões extras TJ</strong>10 questões no formato situacional</div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA com background coruja -->
+<section class="cta-sec" id="download">
+  <div class="cta-inner">
+    <div class="cta-box reveal from-scale">
+      <img class="cta-owl" src="https://mkt.estrategia.com/concursos/wp-content/uploads/sites/2/2024/02/cropped-corujalogo-1.webp" alt="Estratégia">
+      <h3>Baixe o material completo</h3>
+      <p class="cta-sub">Preencha abaixo e receba o caderno de questões gratuitamente no seu e-mail</p>
+
+      <div id="ff">
+        <div class="fld">
+          <label>Seu nome</label>
+          <input type="text" id="nome" placeholder="Como prefere ser chamado(a)?">
+        </div>
+        <div class="fld">
+          <label>Seu melhor e-mail</label>
+          <input type="email" id="email" placeholder="email@exemplo.com">
+        </div>
+        <div class="fld">
+          <label>Cargo de interesse</label>
+          <select id="cargo">
+            <option value="">Selecione...</option>
+            <option>Auditor Fiscal SEFAZ</option>
+            <option>Auditor Fiscal da Receita Federal</option>
+            <option>Analista Tributário da Receita Federal</option>
+            <option>Fiscal de Tributos</option>
+            <option>Outro</option>
+          </select>
+        </div>
+        <div class="fld">
+          <label>Maior dificuldade nos estudos</label>
+          <select id="dif">
+            <option value="">Selecione...</option>
+            <option>ICMS e Legislação Estadual</option>
+            <option>Direito Tributário</option>
+            <option>Contabilidade Geral</option>
+            <option>Legislação Aduaneira</option>
+            <option>Raciocínio Lógico</option>
+            <option>Organização dos estudos</option>
+            <option>Outra</option>
+          </select>
+        </div>
+        <button class="btn-cta" onclick="go()">Quero meu material gratuito</button>
+        <p class="prv">Seus dados estão seguros. Não enviamos spam. É gratuito.</p>
+      </div>
+
+      <div class="suc" id="ok">
+        <h4>Material enviado com sucesso!</h4>
+        <p>Verifique seu e-mail em instantes. Olhe também no spam.</p>
+        <a href="#" class="suc-dl">Baixar direto</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="ftr">
+  <img class="ftr-logo" src="https://mkt.estrategia.com/concursos/wp-content/uploads/sites/2/2024/02/logo_estrategia_concursos.webp" alt="Estratégia Concursos"><br>
+  <a href="https://www.estrategiaconcursos.com.br" target="_blank">estrategiaconcursos.com.br</a><br>
+  Material Gratuito para Concursos. Todos os direitos reservados.<br>
+  <a href="https://mkt.estrategia.com/concursos/politica-de-privacidade/">Política de Privacidade</a>
+  <div class="ftr-cnpj">CNPJ: 13.877.842/0001-78</div>
+</footer>
+
+<script>
+function go(){
+  var n=document.getElementById('nome').value.trim(),e=document.getElementById('email').value.trim();
+  if(!n||!e){alert('Preencha seu nome e e-mail.');return}
+  var l={nome:n,email:e,cargo:document.getElementById('cargo').value,dificuldade:document.getElementById('dif').value,isca:'ISC-001',area:'Fiscal',tipo:'Caderno de Questões',data:new Date().toISOString(),src:'pci_concursos'};
+  var s=JSON.parse(localStorage.getItem('mca_leads')||'[]');s.push(l);localStorage.setItem('mca_leads',JSON.stringify(s));
+  document.getElementById('ff').style.display='none';document.getElementById('ok').style.display='block';
+  if(typeof fbq==='function')fbq('track','Lead',{content_name:'ISC-001'});
+  if(typeof gtag==='function')gtag('event','generate_lead',{event_category:'isca',event_label:'ISC-001'});
+}
+
+// Scroll Reveal — Intersection Observer
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!els.length)return;
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    els.forEach(function(e){e.classList.add('visible')});
+    return;
+  }
+  var obs=new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){
+        entry.target.classList.add('visible');
+      }else{
+        entry.target.classList.remove('visible');
+      }
+    });
+  },{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(el){obs.observe(el)});
+})();
+</script>
+</body>
+</html>
